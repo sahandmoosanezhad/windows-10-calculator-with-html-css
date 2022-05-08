@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="parent">
+       <div>
+          <div class="mis">
+              <span><p>calculator</p></span>
+                <span >
+                    <button id="button" title=”Minimize_icon” class="mines">-</button>
+                    <button id="button" title=”Maximize_Icon” class="squareIcon">&#9633;</button>
+                    <button id="button " class="exitbt">&#10005;</button>
+                </span>
+        </div>
+        <span class="mis">
+            <span class="mis">
+              <button id="button" class="pi">#</button>
+              <h3>standard</h3>
+              <button id="button">&#129133;</button>
+          </span>
+          <span><button id="button">&#9737;</button></span>
+      </span>
+
+
+
+          <form name="val" class="calculator"></form>
+          <div class="pl"><input type="text" class="value" name="ans" value="0"></div>
+          <span class="midbtn">
+              <button disabled="disabled">MC</button>
+              <button disabled="disabled">MR</button>
+              <button id="midbtnon">M+</button>
+              <button id="midbtnon">M-</button>
+              <button id="midbtnon">MS</button>
+              <button disabled="disabled">m^</button>
+          </span>
+        <div class="keys">
+            <button id="but" class="btn btn-primary p-4 calculator_btn " onclick="addInputValue('%')">%</button>
+            <button id="but" class="btn btn-primary p-4 calculator_btn " onclick="addInputValue('CE')">CE</button>
+            <button id="but" class="btn btn-primary p-4 calculator_btn " onclick="addInputValue('C')">C</button>
+            <button id="but" class="btn btn-primary p-4 calculator_btn " onclick="addInputValue('delete')">⌫</button>
+        </div>
+        <div class="keys">
+            <button id="but" class="btn btn-primary p-4 calculator_btn " onclick="addInputValue('1/x')">1/x</button>
+            <button id="but" class="btn btn-primary p-4 calculator_btn " onclick="addInputValue('^')">x^2</button>
+            <button id="but" class="btn btn-primary p-4 calculator_btn " onclick="addInputValue('sqrt')">√x</button>
+            <button id="but" class="btn btn-primary p-4 calculator_btn " onclick="addInputValue('/')">÷</button>
+        </div>
+        <div class="keys">
+            <button id="but" class="btn btn-primary p-4 btnBold " onclick="addInputValue(7)">7</button>
+            <button id="but" class="btn btn-primary p-4 btnBold " onclick="addInputValue(8)">8</button>
+            <button id="but" class="btn btn-primary p-4 btnBold " onclick="addInputValue(9)">9</button>
+            <button id="but" class="btn btn-primary p-4 calculator_btn " onclick="addInputValue('*')">×</button>
+        </div>
+        <div class="keys">
+            
+            <button id="but" class="btn btn-primary p-4 btnBold " onclick="addInputValue(4)">4</button>
+            <button id="but" class="btn btn-primary p-4 btnBold " onclick="addInputValue(5)">5</button>
+            <button id="but" class="btn btn-primary p-4 btnBold " onclick="addInputValue(6)">6</button>
+            <button id="but" class="btn btn-primary p-4 calculator_btn " onclick="addInputValue('-')">-</button>
+        </div>
+        <div class="keys">
+            <button id="but" class="btn btn-primary p-4 btnBold " onclick="addInputValue(1)">1</button>
+            <button id="but" class="btn btn-primary p-4 btnBold " onclick="addInputValue(2)">2</button>
+            <button id="but" class="btn btn-primary p-4 btnBold " onclick="addInputValue(3)">3</button>
+            <button id="but" class="btn btn-primary p-4 calculator_btn " onclick="addInputValue('+')">+</button>
+        </div>
+        <div class="keys">
+            <button id="but" class="btn btn-primary p-4 " onclick="addInputValue(1)">+/-</button>
+            <button id="but" class="btn btn-primary p-4 btnBold " onclick="addInputValue(0)">0</button>
+            <button id="but" class="btn btn-primary p-4 " onclick="addInputValue('.')">.</button>
+            <button id="but" class="btn btn-primary p-4 pa " onclick="document.val.ans.value =eval(document.val.ans.value)">=</button>
+        </div>
+    </div>
+ 
+
+    <div class="div_history">
+        <div class="column">
+          <h4 class="histry">History</h4>
+          <h4>Memory</h4>
+        </div>
+        <div>There is no history</div>
+      </div>
+    </div>
+
+      <script>
+        const input = document.querySelector('input');
+            function addInputValue(value) {
+                input.value = value;
+        }
+      </script>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

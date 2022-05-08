@@ -1,0 +1,149 @@
+body{
+    max-width: 600px;
+    background-color: rgb(225, 225, 225)!important;
+}
+#but{
+    /* width: 24.3%; */
+    height: 70px;
+    margin-top: 2px;
+    background-color: white;
+    margin-left: 1px;
+    color: black;
+    box-shadow: inset;
+    flex: 1;
+    margin: 1px;
+    border-color: rgb(225, 225, 225)!important;
+    
+}
+.value{
+    background-color: rgb(225, 225, 225)!important;
+    font-weight: bolder;
+    text-align: end;
+    border: none;
+    font-size: 36px;
+    outline: none;
+    margin-bottom: 5px;
+}
+#but:hover{
+    background-color: rgb(123, 123, 123);
+}
+.keys{
+    display: flex;
+    align-items: stretch;
+}
+.keys button:hover {
+    border: 1px solid #bbb;
+    box-shadow: 0px 0px 4px rgba(180, 176, 176, 22)!important;
+    -webkit-box-shadow:  0px 0px 4px rgba(180, 176, 176, 22)!important;
+    
+}
+.se {
+    color: black;
+}
+.se:hover {
+    color: black;
+}
+.sahand {
+    color: black;
+}
+.sahand:hover{
+    color: black;
+}
+.sh {
+    background-color: white;
+}
+.mis{
+    
+    margin: 2px;
+    display: flex;
+    justify-content: space-between;   
+}
+.mis button{
+    margin: 2px;
+   border-color: rgb(225, 225, 225)!important;
+   border: none;
+}
+.mis button:hover{
+    background-color: rgb(123, 123, 123);
+}
+.exitbt:hover{
+    color: aliceblue;
+    background-color: rgb(215, 26, 26)!important;
+}
+.pa{
+    background-color: rgb(199, 213, 253)!important;
+}
+.pa:hover{
+    background-color: rgb(141, 170, 250)!important;
+}
+.pl{
+    display: flex;
+    justify-content: flex-end;
+}
+.btnBold{
+    font-weight: bold!important;
+}
+.midbtn{
+    display: flex;
+    align-items: stretch;
+}
+.midbtn button{
+    flex: 1;
+    width: 79px!important;
+    background-color: rgb(228, 228, 228)!important;
+    border: none;
+}
+
+.midbtn #midbtnon:hover{
+    background-color: rgb(123, 123, 123)!important;
+}
+
+.calculator_btn{
+    background-color: rgb(236, 234, 234)!important;
+}
+.calculator_btn:hover{
+    background-color: rgb(129, 129, 129)!important;
+}
+.mines{
+    font-size: large;
+}
+.mines:hover{
+    font-size: 50%;
+}
+.squareIcon{
+    font-size: large;
+}
+.squareIcon:hover{
+    font-size: 150%;
+}
+    /* On screens that are 992px wide or less, go from four columns to two columns */
+    @media screen and (max-width: 600px) {
+        .div_history {
+            display: none!important;
+        }
+    }
+  .pi{
+      font-size: 100;
+  }
+  .pi:hover{
+      font-size: 50%!important;
+  }
+  .column{
+      display: flex;
+  }
+  .column h4{
+      display: inline!important;
+  }
+  .column .histry{
+      margin-right: 20px;
+  }
+  .parent{
+      display: flex;
+  }
+.div_history{
+    display: flex;
+    flex-direction: column;
+}
+.histry{
+    text-decoration: underline rgb(219, 17, 17)!important;
+}
