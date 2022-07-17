@@ -1,18 +1,18 @@
 body{
-    max-width: 600px;
+    max-width: 100%;
     background-color: rgb(225, 225, 225)!important;
 }
 #but{
-    /* width: 24.3%; */
-    height: 70px;
+    width: 70px;
+    height: 95px;
     margin-top: 2px;
     background-color: white;
     margin-left: 1px;
     color: black;
     box-shadow: inset;
-    flex: 1;
+    flex: 5;
     margin: 1px;
-    border-color: rgb(225, 225, 225)!important;
+    border-color: rgb(225, 225, 225);
     
 }
 .value{
@@ -43,11 +43,8 @@ body{
 .se:hover {
     color: black;
 }
-.sahand {
-    color: black;
-}
-.sahand:hover{
-    color: black;
+#buttonTop{
+    background-color: rgb(225, 225, 225);
 }
 .sh {
     background-color: white;
@@ -60,7 +57,7 @@ body{
 }
 .mis button{
     margin: 2px;
-   border-color: rgb(225, 225, 225)!important;
+    background-color: rgb(225, 225, 225)!important;
    border: none;
 }
 .mis button:hover{
@@ -108,25 +105,36 @@ body{
     font-size: large;
 }
 .mines:hover{
-    font-size: 50%;
+    font-size: 90%;
 }
 .squareIcon{
     font-size: large;
 }
 .squareIcon:hover{
-    font-size: 150%;
+    font-size: 110%;
 }
     /* On screens that are 992px wide or less, go from four columns to two columns */
-    @media screen and (max-width: 600px) {
+     @media screen and (max-width: 600px) {
         .div_history {
             display: none!important;
         }
+    } 
+    @media screen and (min-width: 600px) {
+        .parent{
+            display: inline-block!important;
+            
+        }
+        .div_history {
+            display: inline-block!important;
+        }
     }
+
+      
   .pi{
       font-size: 100;
   }
   .pi:hover{
-      font-size: 50%!important;
+      font-size: 90%!important;
   }
   .column{
       display: flex;
@@ -139,6 +147,7 @@ body{
   }
   .parent{
       display: flex;
+      width: 100%;
   }
 .div_history{
     display: flex;

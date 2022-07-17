@@ -11,30 +11,27 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-    <div class="parent">
+    <div class="parent" style="min-width: 100%;">
        <div>
           <div class="mis">
               <span><p>calculator</p></span>
                 <span >
-                    <button id="button" title=”Minimize_icon” class="mines">-</button>
-                    <button id="button" title=”Maximize_Icon” class="squareIcon">&#9633;</button>
-                    <button id="button " class="exitbt">&#10005;</button>
+                    <button id="buttonTop" title=”Minimize_icon” class="mines">-</button>
+                    <button id="buttonTop" title=”Maximize_Icon” class="squareIcon">&#9633;</button>
+                    <button id="buttonTop" class="exitbt">&#10005;</button>
                 </span>
         </div>
         <span class="mis">
             <span class="mis">
-              <button id="button" class="pi">#</button>
+              <button id="button" class="pi">&#8801;</button>
               <h3>standard</h3>
-              <button id="button">&#129133;</button>
+              <button id="button">&#10138;</button>
           </span>
-          <span><button id="button">&#9737;</button></span>
+          <span><button id="button" >&#8461;</button></span>
       </span>
-
-
-
-          <form name="val" class="calculator"></form>
+          <form name="val" class="calculator" style="min-width:100%;"></form>
           <div class="pl"><input type="text" class="value" name="ans" value="0"></div>
-          <span class="midbtn">
+          <span class="midbtn" >
               <button disabled="disabled">MC</button>
               <button disabled="disabled">MR</button>
               <button id="midbtnon">M+</button>
@@ -42,7 +39,7 @@
               <button id="midbtnon">MS</button>
               <button disabled="disabled">m^</button>
           </span>
-        <div class="keys">
+        <div class="keys" >
             <button id="but" class="btn btn-primary p-4 calculator_btn " onclick="addInputValue('%')">%</button>
             <button id="but" class="btn btn-primary p-4 calculator_btn " onclick="addInputValue('CE')">CE</button>
             <button id="but" class="btn btn-primary p-4 calculator_btn " onclick="addInputValue('C')">C</button>
